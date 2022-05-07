@@ -19,7 +19,7 @@ app.use(morgan("combined"));
 try {
   sequelizeDB.authenticate();
   sequelizeDB
-    .sync({ force: true })
+    .sync()
     .then(() => {
       app.listen(port, () => {
         console.log("server running on port", port);
