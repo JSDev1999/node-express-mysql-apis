@@ -8,6 +8,7 @@ const productModel = sequelizeDB.define("product", {
   },
   price: {
     type: DataTypes.INTEGER,
+    allowNull: false,
   },
   description: {
     type: DataTypes.TEXT,
